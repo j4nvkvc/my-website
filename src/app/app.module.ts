@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RealisationDetailsComponent } from './realisation-details/realisation-details.component';
+import { RouteVerificationComponent } from './route-verification/route-verification.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { RealisationDetailsComponent } from './realisation-details/realisation-d
     RealisationsComponent,
     ContactComponent,
     FooterComponent,
-    RealisationDetailsComponent
+    RealisationDetailsComponent,
+    RouteVerificationComponent
   ],
   imports: [
     BrowserModule,
