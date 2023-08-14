@@ -1,0 +1,122 @@
+.footer_container__eYhjo {
+    position: relative;
+    left: 275px;
+    width: calc(100% - 272px);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    line-height: 1.4285em;
+    box-sizing: content-box;
+    border-left: 1px solid #828282;
+}
+
+.footer_container__eYhjo .footer_contact__3Lx_P {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+.footer_infos__1tL0x {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.footer_infos__1tL0x {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 14px;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+.icon_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.footer_socialMedias__3RwYR {
+    padding-top: 2rem;
+    border-top: 1px solid #828282;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_socialIcon__3FQYq {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.footer_socialIcon__3FQYq i {
+    color: #fff;
+}
+
+.footer_text__2ms-a {
+    color: #fff;
+}
+
+.icon1 {
+    height: 48px;
+    width: 48px;
+}
+
+.icon2 {
+    height: 40px;
+    width: 38px;
+}
+
+
+.icon3 {
+    height: 40px;
+    width: 29px;
+}
+
+.footer_contact__3Lx_P a,
+.footer_socialMedias__3RwYR a {
+    color: white; /* Couleur du texte blanc pour les liens */
+    text-decoration: none; /* Pas de soulignement pour les liens */
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.footer_contact__3Lx_P a:hover,
+.footer_socialMedias__3RwYR a:hover {
+    color: #f7c427; /* Nouvelle couleur au survol */
+}
+
+.github-icon {
+height: 40px;
+width: 40px;
+}
+
+.linkedin-icon{
+    height: 37px;
+    width: 37px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer_contact__3Lx_P {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .footer_infos__1tL0x {
+            margin-bottom: 20px;
+        }
+    }

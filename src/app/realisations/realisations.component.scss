@@ -1,0 +1,205 @@
+body {
+    margin-left: 272px;
+    background-color:#f7f7f7;
+}
+
+
+.section_container__2NVtm h3 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.section_container__2NVtm p {
+    font-size: 1rem;
+    color: #dc3545;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.87);
+    margin-top: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h6 {
+    color: #dc3545;
+    font-weight: 700;
+}
+
+
+
+/* Styles pour la section container */
+.section_container__2NVtm {
+    padding: 3rem;
+}
+
+/* Styles pour le titre de la section */
+.section_container__2NVtm h4 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Styles pour le sous-titre de la section */
+.section_container__2NVtm p {
+    font-size: 14px;
+}
+
+/* Styles pour la grille de portefolio */
+#projectSection {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px; /* Espace entre les cartes */
+    flex-wrap: wrap; /* Permet le retour à la ligne des cartes */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+}
+
+
+.card_title__3Y-6- {
+    margin-bottom: 15px; /* Espacement entre le titre et le haut de la carte */
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Styles pour une carte de portefolio */
+.portfolio_card__CpuOu {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    min-width: 300px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Styles pour l'image de la carte */
+.card_image__12345 img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styles pour le contenu au survol */
+.card_hover__20WoO {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    padding: 1rem;
+}
+
+/* Styles pour le contenu au survol affiché */
+.portfolio_card__CpuOu:hover .card_hover__20WoO {
+    opacity: 1;
+}
+
+/* Styles pour le contenu au survol */
+.card_hoverContent__3o-MB {
+    text-align: center;
+}
+
+/* Styles pour le bouton "En voir plus" */
+.button_container__2kL7U {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 50px;
+}
+
+/* Styles pour le bouton "En voir plus" au survol */
+.button_container__2kL7U:hover {
+    background-color: #c82333;
+}
+
+.portfolio_bottom__wVXXW {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+/* Cacher les expériences après "Magicways" */
+.hidden-project {
+    display: none;
+}
+
+/* Styles pour le bouton "En voir plus" au survol */
+#showMoreButton:hover {
+    background-color: #c82333;
+    cursor: pointer;
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    text-align: left;
+
+  }
+  
+  ul li:before {
+    content: '✓ ';
+  }
+
+  /* Styles for mobile */
+@media (max-width: 768px) {
+
+    /* Réorganiser le contenu principal en colonne */
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    /* Centrer le nav-bar */
+    .nav-bar {
+        justify-content: center;
+    }
+
+    /* Redimensionner le header */
+    .app-header {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    /* Centrer les compétences */
+    .skills_container__TvqaX {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    /* Redimensionner les cartes de compétences */
+    .card_card__2K3F4 {
+        width: 100%;
+    }
+
+    /* Centrer le texte dans la section "Travaillons ensemble!" */
+    .contact-me_contactText__2bfOb {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* Centrer le bouton de contact */
+    .button_container {
+        text-align: center;
+    }
+}
+

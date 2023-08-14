@@ -1,0 +1,91 @@
+body {
+  margin-left: 300px;
+  margin-right: 100px;
+  padding-bottom: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  ;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+
+.page_container__3V4eT {
+  padding: 3rem;
+}
+
+label {
+  display: block;
+  margin: 0 0 0.28571429rem;
+  color: rgba(0, 0, 0, .87);
+  font-size: .92857143em;
+  font-weight: 700;
+  text-transform: none;
+}
+
+h4 {
+  font-size: 1rem;
+  color: #dc3545;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+
+
+/* Style pour le formulaire */
+.ui.form {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-left: 0;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+/* Style pour les messages d'erreur */
+.ui.error.message {
+  color: #9f3a38;
+}
+
+/* Style pour les messages de succès */
+.ui.success.message {
+  color: #4caf50;
+}
+
+/* Style pour les champs de saisie */
+.ui.form input[type="text"],
+.ui.form input[type="email"],
+.ui.form textarea {
+  font-family: Lato, Helvetica Neue, Arial, Helvetica, sans-serif;
+  margin: 0;
+  outline: 0;
+  -webkit-appearance: none;
+  tap-highlight-color: hsla(0, 0%, 100%, 0);
+  line-height: 1.4285em;
+  padding: 1rem;
+  font-size: 1rem;
+  background: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.2857rem;
+  box-shadow: none;
+  transition: color 0.1s ease, border-color 0.1s ease;
+  width: 100%;
+}
+
+/* Style pour le bouton */
+.ui.red.button {
+  background-color: #db2828;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.2857rem;
+  transition: background-color 0.2s ease;
+}
+
+.ui.red.button:hover {
+  background-color: #c82333;
+}

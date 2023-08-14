@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charSet="utf-8" />
+    <meta name="description"
+        content="Emir Tuközoğlu, Développeur Junior spécialisé Java Angular vous accompagne pour tous vos projets frontend, disponible sur Paris ou remote" />
+    <meta name="title" content="Emir Tuközoğlu - Développeur Java Angular à Paris" />
+    <meta name=" robots " content="index, follow" />
+    <title>Contact | Emir Tuközoğlu - Développeur Java Angular</title>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <meta name="next-head-count" content="6" />
+
+</head>
+
+<body>
+    <div id="__next">
+        <div class="layout_container__126y6">
+
+            <div class="layout_mobileMenu__1iBw8">
+                <div role="button" class="hamburger_container__8QVnB"><span></span><span></span><span></span></div>
+            </div>
+            <div class="layout_content__2V5t2">
+                <div class="page_container__3V4eT">
+                    <h3>Contactez-moi</h3>
+                    <h4>Faîtes moi part de vos projets et je vous répondrai rapidement</h4>
+                    <div class="page_content__3yaVq">
+                        <div style="width: 100%; margin-bottom: 2rem">
+                            <iframe scrolling="no"
+                                src="https://maps.google.com/maps?width=100%25&amp;height=400&amp;hl=en&amp;q=33%20rue%20de%20la%20demi%20lune,%20Montreuil&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                                width="100%" height="400" frameborder="0"></iframe>
+                        </div>
+
+                        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="ui form">
+                            <div class="field">
+                              <label>Nom (requis)</label>
+                              <div class="ui fluid input">
+                                <input formControlName="name" placeholder="Nom" type="text">
+                              </div>
+                              <div *ngIf="contactForm.get('name')?.hasError('required') && contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="ui error visible message">Champ requis</div>
+                            </div>
+                          
+                            <div class="field">
+                              <label>Prénom (requis)</label>
+                              <div class="ui fluid input">
+                                <input formControlName="firstname" placeholder="Prénom" type="text">
+                              </div>
+                              <div *ngIf="contactForm.get('firstname')?.hasError('required') && contactForm.get('firstname')?.invalid && contactForm.get('firstname')?.touched" class="ui error visible message">Champ requis</div>
+                            </div>
+                          
+                            <div class="field">
+                              <label>Société</label>
+                              <div class="ui fluid input">
+                                <input formControlName="company" placeholder="Société" type="text">
+                              </div>
+                            </div>
+                          
+                            <div class="field">
+                              <label>Téléphone (requis)</label>
+                              <div class="ui fluid input">
+                                <input formControlName="phone" placeholder="Téléphone" type="text">
+                              </div>
+                              <div *ngIf="contactForm.get('phone')?.hasError('required') && contactForm.get('phone')?.invalid && contactForm.get('phone')?.touched" class="ui error visible message">Champ requis</div>
+                            </div>
+                          
+                            <div class="field">
+                              <label>Email (requis)</label>
+                              <div class="ui fluid input">
+                                <input formControlName="email" placeholder="Email" type="email">
+                              </div>
+                              <div *ngIf="contactForm.get('email')?.hasError('required') && contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="ui error visible message">Champ requis</div>
+                              <div *ngIf="contactForm.get('email')?.hasError('email')" class="ui error visible message">Format d'email incorrect</div>
+                            </div>
+                          
+                            <div class="field">
+                              <label>Message (requis)</label>
+                              <textarea formControlName="message" placeholder="Message" rows="3" spellcheck="false"></textarea>
+                              <div *ngIf="contactForm.get('message')?.hasError('required')" class="ui error visible message">Champ requis</div>
+                            </div>
+                          
+                            <button [disabled]="!contactForm.valid" class="ui red button">Envoyer</button>
+                          </form>
+                          
+                          
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<app-footer></app-footer>
+
+</html>

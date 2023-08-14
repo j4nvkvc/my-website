@@ -1,0 +1,99 @@
+/* Styles pour les appareils de bureau */
+@media (min-width: 769px) {
+    .mobile-only {
+        display: none;
+        /* Masquer sur les appareils de bureau */
+    }
+
+    .desktop-only {
+        display: block;
+        /* Afficher sur les appareils de bureau */
+    }
+
+    .main-content {
+        display: block;
+    }
+
+}
+
+/* Styles for mobile */
+@media (max-width: 768px) {
+
+    .mobile-only {
+        display: block;
+        /* Afficher sur les appareils mobiles */
+    }
+
+    .desktop-only {
+        display: none;
+        /* Masquer sur les appareils mobiles */
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+
+    .app-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .mobile {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .nav-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #333;
+        padding: 1em;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .nav-icon {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        color: white;
+        font-size: 26px;
+        text-align: center;
+    }
+
+
+    .app-header {
+        position: fixed;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #333;
+        color: white;
+        padding: 1em;
+        text-align: center;
+        z-index: 2;
+    }
+
+    router-outlet {
+        width: 100%;
+        /* Assurez-vous que le contenu du routeur occupe la largeur de l'écran */
+        padding: 1em;
+        /* Ajoutez un espacement autour du contenu du routeur */
+        box-sizing: border-box;
+        font-size: 14px;
+
+    }
+}

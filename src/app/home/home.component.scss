@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 272px;
+
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    background-color: #f7f7f7;
+
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, .87);
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, .87);
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+p {
+    font-size: 1rem;
+    color: #dc3545;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.subtitle1 {
+    font-size: 1rem;
+    color: #dc3545;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.caroussel-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.caroussel-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+    color: white;
+    width: 100%;
+}
+
+.caroussel-content h2 strong {
+    background-color: #dc3545;
+    padding: 0 0.5rem;
+}
+
+.dynamic-text {
+    color: white;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    /* Ajouter un espace entre les rôles */
+}
+
+.dynamic-role {
+    display: inline-block;
+
+}
+
+.section_container__2NVtm {
+    padding: 3rem;
+}
+
+
+.skills_container__TvqaX {
+    display: grid;
+    grid-gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 40px;
+    padding: 3rem;
+}
+
+.card_card__2K3F4 {
+    height: 250px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    color: #000;
+}
+
+
+.card_card__2K3F4 .card_icon__3ACDG img {
+    width: 130px;
+    height: 130px;
+}
+
+.contact-me_container__1yzXi {
+    -webkit-text-size-adjust: 100%;
+    font-size: 14px;
+    line-height: 1.4285em;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    box-sizing: content-box;
+    width: 100%;
+    display: block;
+    background-image: url(/assets/bg-hero.jpg);
+    background-attachment: fixed;
+    background-position: 50%;
+    color: #fff;
+}
+
+.contact-me_workTogether {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.button_container {
+    padding: 10px 20px;
+    border-radius: 5px;
+    min-height: 50px;
+    display: flex;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.contact-me_container__1yzXi .contact-me_bg__1j2pk {
+    padding: 5rem 0;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    box-sizing: content-box;
+}
+/* Styles for mobile */
+@media (max-width: 768px) {
+
+    /* Réorganiser le contenu principal en colonne */
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    /* Centrer le nav-bar */
+    .nav-bar {
+        justify-content: center;
+    }
+
+    /* Redimensionner le header */
+    .app-header {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    /* Centrer les compétences */
+    .skills_container__TvqaX {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+    }
+
+    /* Redimensionner les cartes de compétences */
+    .card_card__2K3F4 {
+        width: 100%;
+    }
+
+    /* Centrer le texte dans la section "Travaillons ensemble!" */
+    .contact-me_contactText__2bfOb {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    /* Centrer le bouton de contact */
+    .button_container {
+        text-align: center;
+    }
+}

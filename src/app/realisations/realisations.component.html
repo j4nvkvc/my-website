@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta name="description" content="Emir Tuközoğlu, Développeur Fullstack spécialisé Java Angular...">
+    <meta name="title" content="Emir Tuközoğlu - Développeur Fullstack Java Angular à Paris">
+    <meta name="robots" content="index, follow">
+    <title>A propos de moi | Emir TUKÖZOĞLU - Développeur Java</title>
+</head>
+
+
+<body>
+
+    <section class="section_container__2NVtm">
+
+        <h3>Mon portefolio</h3>
+        <p>Des exemples de réalisations</p>
+
+        <div id="projectSection" class="my-projets">
+
+            <div class="pro1">
+            <div class="portfolio_container__2x-os">
+                <h5 class="card_title__3Y-6-">Wildflix</h5>
+                <div class="portfolio_grid__2-4kd"><a href="http://localhost:4200/realisation-details/1">
+                    <div class="portfolio_card__CpuOu">
+                        <div class="card_image__12345">
+                            <img src="/assets/projet4.jpeg" alt="Wildflix">
+                        </div>
+                        <div class="card_hover__20WoO">
+                            <div class="card_hoverContent__3o-MB">
+                                <h6>Wildflix</h6>
+                                <ul>
+                                    <li>Typescript</li>
+                                    <li>Angular</li>
+                                    <li>Java</li>
+                                    <li>Spring Boot</li>
+                                    <li>Bootstrap</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                </ul>
+                                <button class="button_container__2kL7U">Voir plus</button>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="pro2">
+
+            <div class="portfolio_container__2x-os">
+                <h5 class="card_title__3Y-6-">Amazing Recipes</h5>
+                <div class="portfolio_grid__2-4kd"><a href="http://localhost:4200/realisation-details/2">
+                    <div class="portfolio_card__CpuOu">
+                        <div class="card_image__12345">
+                            <img src="/assets/recette-photos/recette1.png" alt="Projet 2">
+                        </div>
+                        <div class="card_hover__20WoO">
+                            <div class="card_hoverContent__3o-MB">
+                                <h6>Amazing Recipes</h6>
+                                <ul>
+                                    <li>Typescript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>API</li>
+                                    <li>Angular</li>
+                                    <li>Bootstrap</li>
+                                </ul>
+                                <button class="button_container__2kL7U">Voir plus</button>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div id="projectSection" class="my-projets">
+
+    
+        <div class="pro3">
+
+            <div class="portfolio_container__2x-os">
+                <h5 class="card_title__3Y-6-">My Personal Site Web</h5>
+                <div class="portfolio_grid__2-4kd"><a href="http://localhost:4200/realisation-details/3">
+                    <div class="portfolio_card__CpuOu">
+                        <div class="card_image__12345">
+                            <img src="/assets/projet3.jpeg" alt="My Site Web">
+                        </div>
+                        <div class="card_hover__20WoO">
+                            <div class="card_hoverContent__3o-MB">
+                                <h6>My Site Web</h6>
+                                <ul>
+                                    <li>Typescript</li>
+                                    <li>Javascript</li>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>Angular</li>
+                                </ul>
+                                <button class="button_container__2kL7U">Voir plus</button>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="pro4">
+
+            <div class="portfolio_container__2x-os">
+                <h5 class="card_title__3Y-6-">Magicways</h5>
+                <div class="portfolio_grid__2-4kd"><a href="http://localhost:4200/realisation-details/4">
+                    <div class="portfolio_card__CpuOu">
+                        <div class="card_image__12345">
+                            <img src="/assets/projet4.jpeg" alt="Magicways">
+                        </div>
+                        <div class="card_hover__20WoO">
+                            <div class="card_hoverContent__3o-MB">
+                                <h6>Magicways</h6>
+                                <ul>
+                                    <li>Typescript</li>
+                                    <li>React</li>
+                                    <li>Semantic-UI</li>
+                                    <li>Node.JS</li>
+                                    <li>Firebase</li>
+                                </ul>
+                                <button class="button_container__2kL7U">Voir plus</button>
+                            </div>
+                        </div>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="portfolio_bottom__wVXXW">
+                <div id="showMoreButton" class="button_container__2kL7U" (click)="toggleHiddenProjects()" style="background-color:#dc3545;color:#fff">En voir plus</div>
+        </div>
+
+        <div id="projectSection" class="my-projets">
+
+        <div class="pro5 hidden-project" [class.hidden-project]="!showHiddenProjects">
+        <div class="portfolio_container__2x-os">
+            <h5 class="card_title__3Y-6-">Restaurant Sofia</h5>
+            <div class="portfolio_grid__2-4kd"><a href="http://localhost:4200/realisation-details/5">
+                <div class="portfolio_card__CpuOu">
+                    <div class="card_image__12345">
+                        <img src="/assets/projet2.jpg" alt="Restaurant Sofia">
+                    </div>
+                    <div class="card_hover__20WoO">
+                        <div class="card_hoverContent__3o-MB">
+                            <h6>Restaurant Sofia</h6>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Wordpress</li>
+                            </ul>
+                            <button class="button_container__2kL7U">Voir plus</button>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="pro6 hidden-project" [class.hidden-project]="!showHiddenProjects">
+        <div class="portfolio_container__2x-os">
+            <h5 class="card_title__3Y-6-">Armada Travel Madagascar</h5>
+            <div class="portfolio_grid__2-4kd"><a href="http://localhost:4200/realisation-details/6">
+                <div class="portfolio_card__CpuOu">
+                    <div class="card_image__12345">
+                        <img src="/assets/projet4.jpeg" alt="Armada Travel Madagascar">
+                    </div>
+                    <div class="card_hover__20WoO">
+                        <div class="card_hoverContent__3o-MB">
+                            <h6>Armada Travel Madagascar</h6>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Wordpress</li>
+                            </ul>
+                            <button class="button_container__2kL7U">Voir plus</button>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+
+        </div>
+
+        <div id="projectSection" class="my-projets">
+
+
+    <div class="pro7 hidden-project" [class.hidden-project]="!showHiddenProjects">
+        <div class="portfolio_container__2x-os">
+            <h5 class="card_title__3Y-6-">Association Turquoises</h5>
+            <div class="portfolio_grid__2-4kd"><a href="http://localhost:4200/realisation-details/7">
+                <div class="portfolio_card__CpuOu">
+                    <div class="card_image__12345">
+                        <img src="/assets/projet2.jpg" alt="Association Turquoises">
+                    </div>
+                    <div class="card_hover__20WoO">
+                        <div class="card_hoverContent__3o-MB">
+                            <h6>Association Turquoises</h6>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Wordpress</li>
+                            </ul>
+                            <button class="button_container__2kL7U">Voir plus</button>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+
+    </div>
+
+        </div>
+
+        <h5 [class.hidden-project]="!showHiddenProjects">Mes contributions en terme d'UX</h5>
+
+        <div id="projectSection" class="my-projets">
+
+        <div class="portfolio_container__2x-os hidden-project" [class.hidden-project]="!showHiddenProjects">
+            <h5 class="card_title__3Y-6-">kwiper</h5>
+            <div class="portfolio_grid__2-4kd"><a href="http://localhost:4200/realisation-details/8">
+                <div class="portfolio_card__CpuOu">
+                    <div class="card_image__12345">
+                        <img src="/assets/projet4.jpeg" alt="kwiper">
+                    </div>
+                    <div class="card_hover__20WoO">
+                        <div class="card_hoverContent__3o-MB">
+                            <h6>kwiper</h6>
+                            <ul>
+                                <li>UX Design</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Wordpress</li>
+                            </ul>
+                            <button class="button_container__2kL7U">Voir plus</button>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+
+
+        <div class="portfolio_container__2x-os hidden-project" [class.hidden-project]="!showHiddenProjects">
+            <h5 class="card_title__3Y-6-">Astrocenter</h5>
+            <div class="portfolio_grid__2-4kd"><a href="http://localhost:4200/realisation-details/9">
+                <div class="portfolio_card__CpuOu">
+                    <div class="card_image__12345">
+                        <img src="/assets/projet4.jpeg" alt="Astrocenter">
+                    </div>
+                    <div class="card_hover__20WoO">
+                        <div class="card_hoverContent__3o-MB">
+                            <h6>Astrocenter</h6>
+                            <ul>
+                                <li>UX Design</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Wordpress</li>
+                            </ul>
+                            <button class="button_container__2kL7U">Voir plus</button>
+                        </div>
+                    </div>
+                </div></a>
+            </div>
+        </div>
+    </div>
+
+    </section>
+</body>
+
+<app-footer></app-footer>
+
+</html>
