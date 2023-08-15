@@ -1,7 +1,6 @@
 import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, Renderer2 } from '@angular/core';
 import { SharedDataService } from '../shared-data.service';
 import { ActivatedRoute } from '@angular/router';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 declare global {
   interface Window {

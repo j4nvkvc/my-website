@@ -5,7 +5,6 @@ import { AboutComponent } from './about/about.component';
 import { RealisationsComponent } from './realisations/realisations.component';
 import { ContactComponent } from './contact/contact.component';
 import { RealisationDetailsComponent } from './realisation-details/realisation-details.component';
-import { RouteVerificationComponent } from './route-verification/route-verification.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -19,8 +18,6 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
 
   { path: 'realisation-details/:id', component:RealisationDetailsComponent },
-
-  { path: 'route', component: RouteVerificationComponent },
 
 
 

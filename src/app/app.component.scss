@@ -1,3 +1,10 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Styles pour les appareils de bureau */
 @media (min-width: 769px) {
     .mobile-only {
@@ -19,6 +26,7 @@
 /* Styles for mobile */
 @media (max-width: 768px) {
 
+
     .mobile-only {
         display: block;
         /* Afficher sur les appareils mobiles */
@@ -29,22 +37,24 @@
         /* Masquer sur les appareils mobiles */
     }
 
-    .main-content {
+    .centered {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        min-height: 100vh;
+        align-items: center;
     }
 
+  
 
-    .app-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-    }
+    // .app-container {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     justify-content: center;
+    //     width:100%;
+    // }
+
+    
 
     .mobile {
         position: fixed;
@@ -65,9 +75,9 @@
     }
 
     .nav-icon {
+        display: flex;
         align-items: center;
         justify-content: center;
-        display: flex;
         color: white;
         font-size: 26px;
         text-align: center;
@@ -75,23 +85,17 @@
 
 
     .app-header {
-        position: fixed;
-        top: 50px;
-        left: 0;
-        right: 0;
+        position: relative;
         width: 100%;
         background-color: #333;
         color: white;
         padding: 1em;
         text-align: center;
-        z-index: 2;
     }
 
     router-outlet {
         width: 100%;
         /* Assurez-vous que le contenu du routeur occupe la largeur de l'écran */
-        padding: 1em;
-        /* Ajoutez un espacement autour du contenu du routeur */
         box-sizing: border-box;
         font-size: 14px;
 

@@ -1,6 +1,9 @@
+
 body {
     margin-left: 272px;
     background-color:#f7f7f7;
+    margin-left: 272px; /* Garder la marge gauche pour le menu latéral */
+    width: calc(100% - 272px); /* Ajuster la largeur du contenu */
 }
 
 
@@ -50,13 +53,11 @@ h6 {
 
 /* Styles pour la grille de portefolio */
 #projectSection {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px; /* Espace entre les cartes */
-    flex-wrap: wrap; /* Permet le retour à la ligne des cartes */
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+    grid-gap: 32px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 40px;
+    padding: 3rem;
 }
 
 
@@ -158,48 +159,88 @@ ul {
     content: '✓ ';
   }
 
-  /* Styles for mobile */
+  .portfolio_grid__2-4kd {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    color: #000;
+  }
+
+/* Styles for mobile */
 @media (max-width: 768px) {
 
-    /* Réorganiser le contenu principal en colonne */
-    .main-content {
-        flex-direction: column;
-        align-items: center;
+    body {
         margin-left: 0;
+        max-width: 100%;
     }
 
-    /* Centrer le nav-bar */
-    .nav-bar {
+    /* Réorganiser le contenu de la section de portefolio */
+    #projectSection {
+        grid-template-columns: 1fr; /* Afficher une seule colonne */
+        grid-gap: 20px; /* Réduire l'espace entre les cartes */
+        padding: 1rem; /* Réduire le padding */
+        margin-bottom: 20px; /* Réduire la marge inférieure */
+    }
+
+    /* Centrer les titres et sous-titres */
+    .card_title__3Y-6-,
+    h5 {
+        text-align: center;
+    }
+
+    /* Ajuster la taille des titres */
+    .card_title__3Y-6- {
+        font-size: 20px;
+        margin-bottom: 10px; /* Ajouter un espace entre le titre et le haut de la carte */
+    }
+
+    h5 {
+        font-size: 1.2rem;
+        margin-top: 20px; /* Réduire l'espace au-dessus du titre */
+        margin-bottom: 10px; /* Ajouter un espace en dessous du titre */
+    }
+
+    /* Centrer les cartes et leur contenu */
+    .portfolio_card__CpuOu,
+    .portfolio_grid__2-4kd {
+        margin: 0 auto; /* Centrer horizontalement */
+        text-align: center; /* Centrer le contenu */
+    }
+
+    /* Ajuster la taille de l'image */
+    .card_image__12345 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Réduire la taille des boutons */
+    .button_container__2kL7U {
+        padding: 0.3rem 0.8rem;
+        font-size: 14px;
+    }
+
+    /* Centrer le bouton "En voir plus" */
+    .portfolio_bottom__wVXXW {
         justify-content: center;
     }
 
-    /* Redimensionner le header */
-    .app-header {
-        font-size: 18px;
-        padding: 15px;
+    /* Réduire la marge inférieure des cartes */
+    .portfolio_card__CpuOu,
+    .portfolio_grid__2-4kd {
+        margin-bottom: 20px;
     }
 
-    /* Centrer les compétences */
-    .skills_container__TvqaX {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-gap: 1rem;
-    }
-
-    /* Redimensionner les cartes de compétences */
-    .card_card__2K3F4 {
-        width: 100%;
-    }
-
-    /* Centrer le texte dans la section "Travaillons ensemble!" */
-    .contact-me_contactText__2bfOb {
+    /* Centrer les listes à puces */
+    ul {
         text-align: center;
-        font-size: 18px;
     }
 
-    /* Centrer le bouton de contact */
-    .button_container {
-        text-align: center;
+    /* Ajuster l'espacement des puces */
+    ul li {
+        margin-bottom: 5px;
     }
 }
-
