@@ -1,5 +1,5 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: [ 'build', '-t', '${_REGION}-docker.pkg.dev/${PROJECT_ID}/test-repo/emirapp:${BUILD_ID}', '.' ]
+  args: [ 'build', '-t', '${LOCATION}-docker.pkg.dev/$PROJECT_ID/${REPOSITORY}/${IMAGE}', '.' ]
 images:
-- '${_REGION}-docker.pkg.dev/$PROJECT_ID/test-repo/emirapp:\${BUILD_ID}'
+- '${LOCATION}-docker.pkg.dev/$PROJECT_ID/${_REPOSITORY}/${IMAGE}'
