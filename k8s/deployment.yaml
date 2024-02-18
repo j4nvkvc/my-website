@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: emirapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: emirapp
+  template:
+    metadata:
+      labels:
+        app: emirapp
+    spec:
+      containers:
+      - name: emipapp
+        image: europe-west1-docker.pkg.dev/unique-voyage-414614/emirapp/emirapp:latest
+        ports:
+        - containerPort: 4200
+        env:
+          - name: PORT
+            value: "4200"
