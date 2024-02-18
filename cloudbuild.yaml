@@ -1,6 +1,15 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
+  id: Build
   args: [ 'build', '-t', '$LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp', '.' ]
+
+- name: 'gcr.io/cloud-builders/docker'
+  id: Push
+  args:
+  - 'push'
+  - '$LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp'
+
+
 - name: 'gcr.io/cloud-builders/kubectl'
   id: Deploy
   args:
@@ -12,5 +21,6 @@ steps:
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-c'
     - 'CLOUDSDK_CONTAINER_CLUSTER=playground'
-images:
-- '$LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp'
+
+#images:
+#- '$LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp'
