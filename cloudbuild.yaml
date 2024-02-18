@@ -7,6 +7,8 @@ steps:
   - 'replace'
   - '-f'
   - './k8s/deployment.yaml'
+  - '-n'
+  - 'emirapp'
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-c'
     - 'CLOUDSDK_CONTAINER_CLUSTER=playground'
