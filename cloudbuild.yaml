@@ -6,7 +6,7 @@ steps:
   args:
   - 'replace'
   - '-f'
-  - './k8s/kubernetes.yaml'
+  - './k8s/deployment.yaml'
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-c'
     - 'CLOUDSDK_CONTAINER_CLUSTER=playground'
