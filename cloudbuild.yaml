@@ -1,14 +1,21 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
   id: Build
-  args: [ 'build', '-t', '$LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp', '.' ]
+  args: [ 'build', '-t', '$LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp:${TAG_NAME}', '.' ]
 
 - name: 'gcr.io/cloud-builders/docker'
   id: Push
   args:
   - 'push'
-  - '$LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp'
+  - '$LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp:${TAG_NAME}'
 
+- name: 'gcr.io/cloud-builders/gcloud'
+  id: Generate manifest
+  entrypoint: /bin/sh
+  args:
+  - '-c'
+  - |
+     sed -i 's|image: $LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp:.*|image: $LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp:${TAG_NAME}|' ./k8s/deployment.yaml
 
 - name: 'gcr.io/cloud-builders/kubectl'
   id: Deploy
