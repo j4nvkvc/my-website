@@ -3,8 +3,13 @@ steps:
   args: [ 'build', '-t', '$LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp', '.' ]
 images:
 - '$LOCATION-docker.pkg.dev/$PROJECT_ID/emirapp/emirapp'
-- name: 'gcr.io/cloud-builders/gcloud'
-  args: ['kubectl', 'replace', '-f', './k8s/deployment.yaml']
+
+- name: 'gcr.io/cloud-builders/kubectl'
+  id: Deploy
+  args:
+  - 'replace'
+  - '-f'
+  - './k8s/kubernetes.yaml'
   env:
     - 'CLOUDSDK_COMPUTE_ZONE=europe-west1-c'
     - 'CLOUDSDK_CONTAINER_CLUSTER=playground'
